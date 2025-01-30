@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --primary-color: #F5C50B;
+    --second-color: #F6B12D;
+    --color-black: #090C02;
+    --color-black2: #11151D;
+    --white-color: #FFF;
+}
+
+@font-face {
+    font-family: Cairo-Regular;
+    src: url(../Assets/Fonts/Cairo-Regular.ttf);
+}
+@font-face {
+    font-family: Cairo-Bold;
+    src: url(../Assets/Fonts/Cairo-Bold.ttf);
+}
+@font-face {
+    font-family: Cairo-Medium;
+    src: url(../Assets/Fonts/Cairo-Medium.ttf);
+}
+@font-face {
+    font-family: Cairo-Black;
+    src: url(../Assets/Fonts/Cairo-Black.ttf);
+}
+@font-face {
+    font-family: Pacifico-Regular;
+    src: url(../Assets/Fonts/Pacifico-Regular.ttf);
+}
+
+body {
+    background-color: var(--white-color);
+    font-family: Cairo-Regular;
+    /* font-size: 22px; */
+}
+
+a {
+    text-decoration: none;
+    /* font-size: 20px; */
+    color: #090C02;
+}
+
+.firstNavBar{
+    background-color: var(--white-color);
+    color: var(--white-color);
+    padding: 20px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.logo-burger img{
+    width: 50px;
+    aspect-ratio: 1/1;
+}
+
+.navbarLinks li{
+    display: inline-block;
+    list-style: none;
+    color: var(--color-black);
+    margin-right: 15px;
+    
+}
+
+.auth-div a{
+    text-align: center;
+    padding: 5px 15px;
+    border-radius: 5px;
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); */
+}
+
+.login-btn {
+    background-color: var(--primary-color);
+}
+
+.signup-btn {
+    background-color:var(--color-black2);
+    color: var(--white-color);
+}
+
+.banner, .banner-img{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 80vh;
+    gap: 20px;
+    padding: 5px 20px;
+}
+
+.banner-text{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 30px;
+    gap: 20px;
+}
+
+.banner-text span{
+    font-size: 25px;
+}
+
+.dicover-btn{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    text-align: center;
+    padding: 6px 70px;
+    border-radius: 5px;
+}
+
+.menu-btn{
+    background-color: var(--color-black2);
+    color: var(--white-color);
+    border: none;
+    text-align: center;
+    padding: 6px 15px;
+    border-radius: 5px;
+}
+
+.welcome{
+    line-height: 35px;
+    font-size: 25px;
+}
+.resto-name{
+    font-size: 50px;
+    color: var(--primary-color);
+}
+
+.banner-img img{
+    width: 700px;
+    height: auto;
+}
+
+/*  CSS de la section service  */
+
+#service{
+    display: flex;
+    flex-direction: row;
+    justify-content: center ;
+    gap: 30px;
+    padding: 50px 20px;
+}
+
+.section-container{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.service-item{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 10px;
+    border-radius: 0 10px 10px 0 ;
+    color: #FFF;
+    border-left: solid 5px var(--color-black2);
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); */
+    background-color: var(--second-color);
+    gap: 20px;
+}
+
+@keyframes moov {
+    0%{
+
+    }
+    100%{
+
+    }
+}
+
+.service-item:hover{
+    transition: 0.6s;
+    transform: scale(1.1) ;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.service-list, .service-item div{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+.service-item div i {
+    font-size: 50px;
+    color: var(--color-black);
+}
+
+.service-item div h3{
+    font-size: 30px;
+    color: var(--color-black);
+}
