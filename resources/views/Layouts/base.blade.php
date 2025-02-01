@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{ URL::asset('CSS/style.css') }}">
     <link rel="stylesheet" href="{{ URL::asset('Assets/fontawesome/css/all.min.css') }}">
-    <title>Document</title>
+    <title>BURGER FABRIC</title>
 </head>
 <body>
     @yield('content')
