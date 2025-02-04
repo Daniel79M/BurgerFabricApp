@@ -2,17 +2,33 @@
 
 namespace App\Http\Controllers;
 
+use App\Interfaces\CategoryInterface;
 use App\Models\Product;
 use Illuminate\Http\Request;
+use App\Interfaces\ProductInterface;
 
 class ProductController extends Controller
 {
+
+    private CategoryInterface $categoryInterface;
+    private ProductInterface $productInterface;
+
+    public function __construct(CategoryInterface $categoryInterface, ProductInterface $productInterface)
+    {
+        $this->categoryInterface = $categoryInterface;
+        $this->productInterface = $productInterface;
+    }
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        //
+        $data = $this->productInterface->index();
+
+        return view('Products.index', [
+            'page' => 'Products',
+            'products' => $data,
+        ]);
     }
 
     /**

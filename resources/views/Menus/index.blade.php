@@ -1,7 +1,14 @@
 @extends('Layouts.base')
 
 @section('content')
-<div class="container">
+
+    <section class="categories">
+        <div class="categoriesList">
+            <img src="{{ URL::asset('Assets/images/side-view-salami-pizza-with-bell-pepper-tomatoes-olives-rolling-pin-with-flour.jpg') }}" alt="">
+            <h3 class="CatégorieTitle">Pizza</h3>
+        </div>
+    </section>
+{{-- <div class="container">
     <h1>Notre Menu</h1>
     @foreach ($categories as $category)
         <h2>{{ $category->name }}</h2>
@@ -20,5 +27,5 @@
             @endforeach
         </div>
     @endforeach
-</div>
+</div> --}}
 @endsection

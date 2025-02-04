@@ -9,7 +9,7 @@
         <li><a href="#service">Services</a></li>
         <li><a href="#Abouts">A Propos</a></li>
         <li><a href="#menus">Nos Menu</a></li>
-        <li><a href="">Contactez Nous</a></li>
+        <li><a href="#contacts">Contactez Nous</a></li>
     </ul>
     <div class="auth-div">
         <a href="{{ route('login') }}" class="login-btn">Se connecter</a>
